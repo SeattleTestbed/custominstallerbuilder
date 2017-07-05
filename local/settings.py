@@ -45,6 +45,8 @@ MEDIA_URL = PROJECT_URL + 'static/'
 # The locations of the customized installers created by this program.
 CUSTOM_INSTALLER_URL = PROJECT_URL + 'static/installers/'
 
-# If you set DEBUG to False, you also need to properly set the ALLOWED_HOSTS
-# setting, eg.:
-# ALLOWED_HOSTS = ["example.com"]
+# The host/domain names that this Django site can serve. Usually matches
+# the FQDN in your BASE_URL, but may include (sub-)domain wildcards.
+# To implicitly allow serving on localhost for testing purposes, outcomment
+# it and set DEBUG = True above.
+ALLOWED_HOSTS = ["example.com"]
